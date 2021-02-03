@@ -13,10 +13,6 @@
 
 
   <!-- *ngFor="let heroe of heroes; let i= index" -->
-  <app-heroe-tarjeta [heroe]="heroe" [index]="i" *ngFor="let heroe of heroes; let i= index"></app-heroe-tarjeta>
-
-  <!--        
-    <a [routerLink]="['/heroe',i]" class="btn btn-outline-primary btn-block my-2 my-sm-0"> Ver mas ... </a>
-  -->
+  <app-heroe-tarjeta [heroe]="foo" [index]="foo.idx"  *ngFor="let foo of heroes"></app-heroe-tarjeta>
 
 </div>
