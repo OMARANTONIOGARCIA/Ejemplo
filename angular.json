@@ -35,7 +35,6 @@
               "node_modules/jquery/dist/jquery.slim.min.js",
               "node_modules/popper.js/dist/umd/popper.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js"
-
             ]
           },
           "configurations": {
@@ -130,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "Ejemplo"
+  "defaultProject": "Ejemplo",
+  "cli": {
+    "analytics": "d68a454f-9cce-4902-9fd3-0ded3868ed07"
+  }
 }
