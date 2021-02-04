@@ -1,6 +1,80 @@
-<h1 class="animated fadeIn fast">Sobre Comic App</h1>
+<h1 class="mt-3"> Pipes <small>Angular</small></h1>
 <hr>
-<p class="animated fadeIn">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda non voluptatibus aperiam doloribus consequuntur explicabo, 
-    distinctio obcaecati accusantium, id ex totam nihil illo ea vitae aut laborum ut unde beatae?
-</p>
+<div class="row">
+    <div class="col">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Variable</th>
+                    <th>Pipe</th>
+                    <th>Salida</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> {{ nombre }} </td>
+                    <td> uppercase </td>
+                    <td> {{ nombre | uppercase }} </td>
+                </tr>
+                <tr>
+                    <td> {{ nombre }} </td>
+                    <td> lowercase </td>
+                    <td> {{ nombre | lowercase }} </td>
+                </tr>
+                <tr>
+                    <td> {{ nombre }} </td>
+                    <td> slice </td>
+                    <td> {{ nombre | slice:3 }} </td>
+                </tr>
+                <tr>
+                    <td> {{ nombre }} </td>
+                    <td> slice:0:3 </td>
+                    <td> {{ nombre | slice:0:3 }} </td>
+                </tr>
+                <tr>
+                    <td> {{ arreglo }} </td>
+                    <td> slice:0:3 </td>
+                    <td> {{ arreglo | slice:0:5 }} </td>
+                </tr>
+                <tr>
+                    <td> {{ PI }} </td>
+                    <td> number:1:0-0 </td>
+                    <td> {{ PI | number: '1.0-0' }} </td>
+                </tr>
+                <tr>
+                    <td> {{ PI }} </td>
+                    <td> number:3:0-0 </td>
+                    <td> {{ PI | number: '3.0-0' }} </td>
+                </tr>
+                <tr>
+                    <td> {{ PI }} </td>
+                    <td> number:.0-2 </td>
+                    <td> {{ PI | number: '.0-2' }} </td>
+                </tr>
+                <tr>
+                    <td> {{ porcentaje }} </td>
+                    <td> number percent </td>
+                    <td> {{ porcentaje | percent }} </td>
+                </tr>                
+                <tr>
+                    <td> {{ porcentaje }} </td>
+                    <td> number percent: 2.2-2 </td>
+                    <td> {{ porcentaje | percent:'2.2-2' }} </td>
+                </tr>
+                <tr>
+                    <td> {{ salario }} </td>
+                    <td> currency </td>
+                    <td> {{ salario | currency:'EUR' }} </td>
+                </tr>                
+
+
+            </tbody>
+        </table>
+
+        <h1>Slice</h1>
+        <ul>
+            <li *ngFor="let item of arreglo | slice:5:20"> {{ item }}</li>
+        </ul>
+
+    </div>
+</div>
