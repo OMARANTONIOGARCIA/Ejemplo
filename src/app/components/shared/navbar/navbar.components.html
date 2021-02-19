@@ -17,8 +17,21 @@
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Buscar heroe" (keyup.enter)="buscarHeroe(buscarTexto.value)"  #buscarTexto>
-      <button class="btn btn-outline-primary my-2 my-sm-0" (click)="buscarHeroe(buscarTexto.value)" type="button">Search</button>
+      <input class="form-control mr-sm-2" type="text" 
+      (keypress)="keyPressOnlyLetter($event)"
+      (keyup.enter)="buscarHeroe(buscarTexto.value)"  #buscarTexto
+      #buscarTexto
+      placeholder="Buscar heroe">
+      
+      <button class="btn btn-outline-primary my-2 my-sm-0"  
+      type="button"
+      (click)="buscarHeroe(buscarTexto.value)"
+      >Search</button>
     </form>  
   </div>
 </nav>
+
+<!-- 
+
+  
+-->

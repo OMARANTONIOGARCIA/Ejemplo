@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Heroe, HeroesService } from 'src/app/servicios/heroes.service';
+import { OnlyLetras } from '../shared/utils/letras';
 
 @Component({
   selector: 'app-buscador',
@@ -22,5 +23,9 @@ export class BuscadorComponent implements OnInit {
 
     })
   }
+
+
+
+
 
 }
